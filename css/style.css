@@ -665,7 +665,8 @@ footer h5 {
 .program {
 	display: flex;
 	min-height: 45vw;
-	background-color: #2AC0FF
+	background-color: #2AC0FF;
+
 }
 .program ol {
 	width: 80%;
@@ -674,7 +675,6 @@ footer h5 {
 .program ol li {
 	height: calc(15px + 0.8vw);
 	padding: 1vw;
-	color: #525c65;
 }
 .program .container {
 	width: 80%;
@@ -683,6 +683,7 @@ footer h5 {
 	justify-content: center;
 	background-color: #fff;
 	border-radius: 8px;
+	padding-bottom: calc(10px + 2vw)
 }
 .program .container > div {
 	margin: 0 auto;
@@ -692,11 +693,18 @@ footer h5 {
 	padding: calc(10px + 0.5vw);
 
 }
-
+.program a{
+	color: #444;
+	text-decoration: none;
+	transition: .3s ease-in-out
+}
+.program a:hover {
+	color: #2AC0FF
+}
 .program h3 {
-	padding: calc(10px + 0.3vw);
 	color: #2AC0FF;
-	padding-bottom: calc(10px + .8vw);
+	padding: calc(10px + 0.3vw) calc(25px + 1vw) calc(10px + .8vw) 0;
+	padding-bottom: ;
 	font-size: calc(16px + 1.2vw)
 }
 .program h3 i {
