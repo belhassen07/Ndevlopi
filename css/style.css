@@ -116,10 +116,11 @@ header {
 }
 /*navbar*/
 nav {
-	padding-top: calc(20px + .5vw);
-	padding-bottom: calc(10px + .8vw);
+	padding-top: calc(20px + .4vw);
+	padding-bottom: calc(20px + 1vw);
 	padding-right: 4vw;
 	background: #2AC0FF;
+	box-sizing: border-box;
 	
 }
 nav img{
