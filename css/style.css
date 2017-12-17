@@ -111,15 +111,39 @@ header {
 	min-height: 90vh;
 	background-color: #2AC0FF;
 	overflow: hidden;
-	padding-top: calc(10px + .3vw);
 	padding-bottom: calc(10px + 1vw)
 }
 /*navbar*/
 nav {
-	padding-top: calc(10px + .5vw);
-	padding-bottom: calc(10px + .5vw);
+	padding-top: calc(20px + .5vw);
+	padding-bottom: calc(10px + .8vw);
 	padding-right: 4vw;
-	background: #2AC0FF
+	background: #2AC0FF;
+	
+}
+nav img{
+	height: calc(30px + 1.5vw);
+	width: calc(30px + 1.5vw);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.profile-pic{
+	color: #fff;
+	text-decoration: none;
+	direction: ltr;
+	display: flex;
+	padding:1vw;
+	position: absolute;
+	right: calc(10px + 2vw);
+	top: .3vw;
+	transition: .3s ease-in-out
+}
+.profile-pic:hover{
+	background: #09B5FF
+}
+.profile-pic h4{
+	margin-top: 1vw;
+	margin-left: 1vw;
 }
 nav ol {
 	display: flex;
@@ -149,6 +173,7 @@ nav ol a:hover {
 }
 .logo {
 	margin-left: 5vw;
+	margin-right: calc(15px + 3vw);
 	color: #FF6F4D
 }
 nav ol a:nth-of-type(2){
@@ -165,15 +190,17 @@ nav button {
 }
 
 header .container {
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: calc(20px + 3vw)
+	margin: 0 auto;
+	margin-top: calc(20px + 3vw);
+
 }
 .parent-container{
 	width: 80%;
 	margin: 0 auto;
-	height: 90vh;
 	
 }
 .slogan_container img{
@@ -284,8 +311,31 @@ header .container {
 	padding: 1vw;
 }
 .courses {
-	display: flex;
 	padding: 3.4vw 0 3.4vw 0;
+}
+.switch-titles{
+	width: 85%;
+	margin: 0 auto;
+	margin-bottom: calc(15px + 3vw);
+}
+.switch-titles a{
+	margin-right: calc(10px + .5vw);
+	border-bottom: 5px solid #2AC0FF;
+	padding:1vw .5vw 1vw .5vw;
+	color: #2AC0FF;
+	text-decoration: none;
+}
+.courses a h3{
+	display: inline;
+}
+.active-courses{
+	background-color: #efefef
+}
+.my-course{
+	display: none;
+}
+.courses h2:active{
+	background-color: #eee
 }
 .courses .container {
 	margin: auto;
@@ -299,6 +349,7 @@ header .container {
 	box-sizing: border-box;
 	flex: 1 0 200px;
 	min-width: 28%;
+	max-width: 30%;
 	min-height: 26vw;
 	overflow: hidden;
 	position: relative;
@@ -573,7 +624,7 @@ footer h5 {
 	min-height: 50vh;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #fff;
+    background: #E74C3C;;
 	padding: calc(14px + 3vw) 0 calc(14px + 3vw) 0 ;
 }
 .what-to-learn ol {
@@ -586,6 +637,7 @@ footer h5 {
 	margin: auto;
 	background-color: #fff;
 	border-radius: 8px;
+	padding: calc(25px + 3vw);
 }
 .what-to-learn ol li {
 	list-style: none;
@@ -605,22 +657,15 @@ footer h5 {
 .requirements h2,
 .teacher-description h2 {
 	font-size: calc(14px + 1vw);
-	margin-bottom: calc(5px + 1vw);
+	margin-bottom: calc(15px + 1vw);
 }
 .requirements h2{
-	color: #7F7E7E
+	color: #444;
 }
 .program {
 	display: flex;
 	min-height: 45vw;
-	background-image: linear-gradient(
-		#a8e6ce,
-		#dcedc2,
-		#ffd3b5,
-		#ffaaa6,
-		#ff8c94
-	);
-
+	background-color: #2AC0FF
 }
 .program ol {
 	width: 80%;
@@ -636,56 +681,37 @@ footer h5 {
 	margin: calc(15px + 3vw) auto;
 	margin-bottom: calc(10px + 5vw);
 	justify-content: center;
+	background-color: #fff;
+	border-radius: 8px;
 }
 .program .container > div {
 	margin: 0 auto;
 	max-width: 45%;
 	align-content: center;
 	justify-content: center;
-	background-image: linear-gradient(
-		#a8e6ce,
-		#dcedc2,
-		#ffd3b5,
-		#ffaaa6,
-		#ff8c94
-	);
-	box-shadow: 4vw 4vw 10vw rgba(0, 0, 0, 0.2),
-		-0.3vw -0.3vw 6vw rgba(0, 0, 0, 0.2);
 	padding: calc(10px + 0.5vw);
+
 }
-.program h2 {
-	margin-bottom: calc(10px + 1.8vw);
-	color: #fff;
-	font-size: calc(14px + 1.8vw);
-	text-align: center;
-}
+
 .program h3 {
 	padding: calc(10px + 0.3vw);
-	font-size: calc(16px + 0.3vw);
-	display: flex;
-	align-items: center;
-	color: #fff;
+	color: #2AC0FF;
+	padding-bottom: calc(10px + .8vw);
+	font-size: calc(16px + 1.2vw)
 }
 .program h3 i {
 	font-size: calc(14px + 1vw);
-	margin-left: calc(8px + 0.3vw);
+	margin: 0 auto;
 	color: #fff;
 }
 .program h3 i:hover {
 	cursor: pointer;
 }
-.accordion {
-	width: 60%;
-	margin: 0 auto;
-}
-
 /*requirements section*/
 
 .requirements {
 	min-height: 25vw;
-	background-color: #fff;
 	display: flex;
-	background: #f3f3f3;
 	padding: 1vw 0 1vw 0;
 }
 .requirements ol {
@@ -694,7 +720,7 @@ footer h5 {
 .requirements ol li {
 	list-style: none;
 	color: #525c65;
-	font-size: calc(14px + 0.4vw);
+	font-size: calc(16px + 0.5vw);
 	margin-bottom: calc(5px + 1vw);
 }
 .requirements ol li i {
@@ -707,6 +733,8 @@ footer h5 {
 	width: 80%;
 	margin: 0 auto;
 	padding: calc(14px + 3vw) 0 calc(14px + 3vw) 0 ;
+	background-color: #fff;
+	padding: calc(14px + 2vw);
 }
 
 .teacher {
@@ -759,9 +787,8 @@ footer h5 {
 	flex: 10 0 350px;
 	flex-direction: column;
 	padding: 0  0  calc(10px + 1vw) 0 ;
-
-
 }
+
 .videos .videos-list{
 	flex: 2 0 200px;
 	height: 80vh;
@@ -858,4 +885,93 @@ h2.course-title{
 	position: relative;
 
 
+}
+
+/*form*/
+/*login page*/
+
+
+.login , .signing-up {
+	flex:1 0 200px;
+	box-sizing: border-box;
+	min-width: 300px;
+}
+.login form, .signing-up form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding:2vw;
+	width: 70%;
+	margin-right: calc(1vw + 10px);
+
+}
+.entering label{
+	font-size: calc(12px + .2vw);
+	color: #525c65
+}
+
+.login form input, .signing-up form input,.signing-up button {
+	height: calc(15px + 2vw);
+	margin: .4vw 0 .8vw 0;
+}
+
+.entering{
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+.entering h1{
+	font-size: calc(16px + 1vw);
+	margin: calc(2vw + 10px) 0vw calc(0.5vw + 5px) calc(1vw + 10px)
+}
+.login h1{
+	margin-top: calc(25px + 6vw)
+}
+.signing-up{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #FAFAFA	
+}
+.entering svg{
+	margin-bottom: 3vw
+}
+.entering input{
+	transition: .3s ease-in;
+	padding: calc(3px + .2vw);
+	box-sizing: border-box;
+}
+.entering input,.entering input:active, textarea{
+	border: 1px solid #ccc;
+	outline: none;
+}
+.signing-up form button, .login input[type=submit] {
+	background-color: #E74C3C;
+	outline: none;
+	border: none;
+	color:#fff;
+	box-shadow: calc(3px + .3vw) calc(3px + .3vw) calc(4px + .8vw) #a7a7a7;
+	font-size: calc(14px + .4vw);
+	height: calc(10px + 3.3vw);
+	transition: .3s  ease-in-out 
+}
+.entering input:active{
+	border: 
+}
+.login input[type=submit]{
+	box-shadow: calc(3px + .3vw) calc(3px + .3vw) calc(4px + .8vw) #a7a7a7;
+	margin-top: calc(.5vw + 10px)
+}
+.login input[type=submit]:hover{
+	box-shadow: calc(2px + .1vw) calc(2px + .1vw) calc(2px + .2vw) #a7a7a7;
+	cursor: pointer;
+}
+.signing-up form button:hover{
+	box-shadow: calc(1px + .1vw) calc(1px + .1vw) calc(2px + .1vw) #a7a7a7;
+}
+.entering textarea{
+	min-width: 80%;
+	max-width: 120%;
+	max-height: calc(20px + 8vw);
+	min-height: calc(20px + 5vw)
 }
